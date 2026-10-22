@@ -1,12 +1,12 @@
 # Modelos CART y ensamblados — Tarea de ejecución 03
 
 **Aprendizaje de Máquina — Universidad Nacional del Altiplano (UNAP)**
-Estudiante: Cristian Junior Cunurana Calderón · Escuela Profesional de Ingeniería de Sistemas · Ciclo IX · Grupo B
+Estudiante: Cristian Junior Cunurana Calderon · Escuela Profesional de Ingeniería de Sistemas · Ciclo IX · Grupo B
 
 Modelos de árboles de decisión (CART), bagging, RandomForest y XGBoost aplicados a los conjuntos
 `breast_cancer` (clasificación) y `auto_mpg` (regresión).
 
-- **Informe final compilado:** [`Informe_Tarea_03.pdf`](Informe_Tarea_03.pdf) (49 páginas, 24 figuras, 15 tablas)
+- **Informe final compilado:** [`Informe_Tarea_03.pdf`](Informe_Tarea_03.pdf) (44 páginas, 24 figuras, 15 tablas)
 - **Código fuente del informe:** [`main.tex`](main.tex) (LaTeX, `latexmk -pdf main.tex`)
 - **Cuadernos ejecutados (sin errores):** `cuadernos/01_exploracion_datos.ipynb`, `cuadernos/02_arboles_y_modelos_lineales.ipynb`, `cuadernos/03_ensamblados.ipynb`
 
@@ -86,7 +86,7 @@ perímetro y puntos de concavidad.
 
 ```
 Modelos-Cart/
-├── Informe_Tarea_03.pdf      Informe final compilado (49 páginas)
+├── Informe_Tarea_03.pdf      Informe final compilado (44 páginas)
 ├── main.tex                  Código LaTeX del informe
 ├── README.md                 Este documento
 ├── requirements.txt          Versiones exactas del entorno
