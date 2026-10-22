@@ -6,8 +6,8 @@ Estudiante: Cristian Junior Cunurana Calderon · Escuela Profesional de Ingenier
 Modelos de árboles de decisión (CART), bagging, RandomForest y XGBoost aplicados a los conjuntos
 `breast_cancer` (clasificación) y `auto_mpg` (regresión).
 
-- **Informe final compilado:** [`Informe_Tarea_03.pdf`](Informe_Tarea_03.pdf) (30 páginas, 25 figuras, 15 tablas)
-- **Código fuente del informe:** [`main.tex`](main.tex) (LaTeX, `latexmk -pdf main.tex`)
+- **Informe final:** PDF de 30 páginas (25 figuras, 15 tablas) y su código fuente LaTeX, entregados
+  fuera de este repositorio por tratarse de material de evaluación académica
 - **Cuadernos ejecutados (sin errores):** `cuadernos/01_exploracion_datos.ipynb`, `cuadernos/02_arboles_y_modelos_lineales.ipynb`, `cuadernos/03_ensamblados.ipynb`
 
 ---
@@ -94,10 +94,12 @@ perímetro y puntos de concavidad.
 
 ```
 Modelos-Cart/
-├── Informe_Tarea_03.pdf      Informe final compilado (30 páginas)
-├── main.tex                  Código LaTeX del informe
 ├── README.md                 Este documento
 ├── requirements.txt          Versiones exactas del entorno
+├── .gitignore                Excluye los temporales y el material académico
+├── Logo_UNAP.png             Logotipo institucional de la portada del informe
+├── Tarea de ejecución 03.pdf Enunciado de la tarea
+├── Archivo de texto.txt      Identificación del curso, el docente, el grupo y el autor
 ├── cuadernos/
 │   ├── comun.py              Módulo compartido (rutas, semilla, estilo, carga y guardado)
 │   ├── 01_exploracion_datos.ipynb    Ejercicio 0: exploración y diagnóstico (figuras 2.1–2.7)
@@ -107,6 +109,10 @@ Modelos-Cart/
 ├── figuras/                  Las 24 figuras generadas por los cuadernos (PNG)
 └── resultados/               Métricas de todos los experimentos (CSV) y resúmenes (JSON)
 ```
+
+El informe en PDF, su fuente LaTeX y los archivos temporales de compilación **no** se versionan:
+están declarados en `.gitignore` para que el árbol público contenga únicamente el material
+reproducible.
 
 ---
 
@@ -133,7 +139,7 @@ jupyter nbconvert --to notebook --execute --inplace \
     --ExecutePreprocessor.kernel_name=aprendizaje-maquina-t3 \
     cuadernos/03_ensamblados.ipynb
 
-# 4. Compilación del informe
+# 4. Compilación del informe (se realiza fuera del repositorio, junto a main.tex)
 latexmk -pdf -interaction=nonstopmode main.tex
 ```
 
@@ -158,3 +164,4 @@ informe puede recompilarse sin volver a ejecutar los experimentos.
 | ipykernel | 7.4.0 |
 
 Semilla global 42 aplicada a `random`, NumPy, scikit-learn y XGBoost.
+# Modelos-Cart
