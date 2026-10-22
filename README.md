@@ -6,7 +6,7 @@ Estudiante: Cristian Junior Cunurana Calderon · Escuela Profesional de Ingenier
 Modelos de árboles de decisión (CART), bagging, RandomForest y XGBoost aplicados a los conjuntos
 `breast_cancer` (clasificación) y `auto_mpg` (regresión).
 
-- **Informe final compilado:** [`Informe_Tarea_03.pdf`](Informe_Tarea_03.pdf) (44 páginas, 24 figuras, 15 tablas)
+- **Informe final compilado:** [`Informe_Tarea_03.pdf`](Informe_Tarea_03.pdf) (37 páginas, 25 figuras, 15 tablas)
 - **Código fuente del informe:** [`main.tex`](main.tex) (LaTeX, `latexmk -pdf main.tex`)
 - **Cuadernos ejecutados (sin errores):** `cuadernos/01_exploracion_datos.ipynb`, `cuadernos/02_arboles_y_modelos_lineales.ipynb`, `cuadernos/03_ensamblados.ipynb`
 
@@ -86,17 +86,17 @@ perímetro y puntos de concavidad.
 
 ```
 Modelos-Cart/
-├── Informe_Tarea_03.pdf      Informe final compilado (44 páginas)
+├── Informe_Tarea_03.pdf      Informe final compilado (37 páginas)
 ├── main.tex                  Código LaTeX del informe
 ├── README.md                 Este documento
 ├── requirements.txt          Versiones exactas del entorno
 ├── cuadernos/
 │   ├── comun.py              Módulo compartido (rutas, semilla, estilo, carga y guardado)
-│   ├── 01_exploracion_datos.ipynb    Ejercicio 0: exploración y diagnóstico (figuras 1–7)
-│   ├── 02_arboles_y_modelos_lineales.ipynb  Ejercicios 1 y 2 (figuras 8–16)
-│   └── 03_ensamblados.ipynb  Ejercicios 3, 4 y 5 (figuras 17–24)
+│   ├── 01_exploracion_datos.ipynb    Ejercicio 0: exploración y diagnóstico (figuras 2.1–2.7)
+│   ├── 02_arboles_y_modelos_lineales.ipynb  Ejercicios 1 y 2 (figuras 3.1–4.4)
+│   └── 03_ensamblados.ipynb  Ejercicios 3, 4 y 5 (figuras 5.1–7.3)
 ├── datos/                    Copia local de auto_mpg (CSV, texto original y ZIP de la UCI)
-├── figuras/                  Las 24 figuras del informe en PNG
+├── figuras/                  Las 24 figuras generadas por los cuadernos (PNG)
 └── resultados/               Métricas de todos los experimentos (CSV) y resúmenes (JSON)
 ```
 
