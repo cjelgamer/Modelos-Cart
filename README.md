@@ -6,7 +6,7 @@ Estudiante: Cristian Junior Cunurana Calderon · Escuela Profesional de Ingenier
 Modelos de árboles de decisión (CART), bagging, RandomForest y XGBoost aplicados a los conjuntos
 `breast_cancer` (clasificación) y `auto_mpg` (regresión).
 
-- **Informe final compilado:** [`Informe_Tarea_03.pdf`](Informe_Tarea_03.pdf) (37 páginas, 25 figuras, 15 tablas)
+- **Informe final compilado:** [`Informe_Tarea_03.pdf`](Informe_Tarea_03.pdf) (35 páginas, 25 figuras, 15 tablas)
 - **Código fuente del informe:** [`main.tex`](main.tex) (LaTeX, `latexmk -pdf main.tex`)
 - **Cuadernos ejecutados (sin errores):** `cuadernos/01_exploracion_datos.ipynb`, `cuadernos/02_arboles_y_modelos_lineales.ipynb`, `cuadernos/03_ensamblados.ipynb`
 
@@ -33,7 +33,16 @@ Ningún resultado proviene de una ejecución con errores: los cuadernos se ejecu
 
 ---
 
-## 2. Respuestas a las preguntas del enunciado
+## 2. Estructura del informe
+
+Portada · Índice general · **Resumen** · **1. Link del repositorio** (enlace al código, estructura
+y comandos de reproducción) · **2. Contexto y enfoque del trabajo** (caja resumen con el problema,
+el protocolo y los modelos comparados) · **3. Datos y preparación experimental** · **4.–8. Los cinco
+ejercicios** (uno por capítulo, con configuración, resultados y respuesta razonada) · **9. Discusión** ·
+**10. Conclusiones** · Bibliografía · **Anexo A. Tablas completas de validación cruzada** ·
+**Anexo B. Glosario**.
+
+## 3. Respuestas a las preguntas del enunciado
 
 ### Pregunta 1 — ¿Qué modelo es más eficiente en *breast_cancer*: Gini, entropía o regresión logística?
 
@@ -82,11 +91,11 @@ perímetro y puntos de concavidad.
 
 ---
 
-## 3. Estructura del repositorio
+## 4. Estructura del repositorio
 
 ```
 Modelos-Cart/
-├── Informe_Tarea_03.pdf      Informe final compilado (37 páginas)
+├── Informe_Tarea_03.pdf      Informe final compilado (35 páginas)
 ├── main.tex                  Código LaTeX del informe
 ├── README.md                 Este documento
 ├── requirements.txt          Versiones exactas del entorno
@@ -102,7 +111,7 @@ Modelos-Cart/
 
 ---
 
-## 4. Reproducción del trabajo
+## 5. Reproducción del trabajo
 
 ```bash
 # 1. Entorno
@@ -134,7 +143,7 @@ informe puede recompilarse sin volver a ejecutar los experimentos.
 
 ---
 
-## 5. Entorno computacional
+## 6. Entorno computacional
 
 | Componente | Versión |
 |---|---|
