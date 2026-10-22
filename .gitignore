@@ -1,24 +1,76 @@
-# Entornos y kernels
+# ============================================================
+# Entornos y herramientas de Python
+# ============================================================
 .venv/
 venv/
-.ipynb_checkpoints/
+env/
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.eggs/
+build/
+dist/
 
+# ============================================================
+# Jupyter
+# ============================================================
+.ipynb_checkpoints/
+.jupyter/
+.ipynb_convert_out/
+*.nbconvert.ipynb
+
+# ============================================================
 # Artefactos de compilacion LaTeX
+# ============================================================
 *.aux
-*.log
-*.out
-*.toc
-*.lof
-*.lot
+*.bbl
+*.bcf
+*.blg
+*.dvi
 *.fls
 *.fdb_latexmk
+*.glo
+*.gls
+*.ilg
+*.ind
+*.idx
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.spl
+*.swo
 *.synctex.gz
+*.toc
+*.vrb
+*.xdv
+
+# ============================================================
+# Informe academico: se mantiene fuera del repositorio publico
+# ============================================================
+main.tex
 main.pdf
-
-# Archivos auxiliares de trabajo
-.dist/
-
-# Informe de una tarea previa, no forma parte de esta entrega
+main_ejemplo_formato_estetico.tex
+Informe_Tarea_03.pdf
 Informe_Quinta_Tarea.pdf
+
+# ============================================================
+# Editores y sistema operativo
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
