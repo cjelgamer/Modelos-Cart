@@ -1,0 +1,3 @@
+conjunto,tipo_problema,observaciones,variables_predictoras,variable_objetivo,valores_faltantes,particion_prueba
+breast_cancer,clasificación binaria,569,30,diagnostico (0 benigno / 1 maligno),0,"114 observaciones (20 %, estratificada)"
+auto_mpg,regresión,398,7,mpg (millas por galón),6,80 vehículos (20 %)

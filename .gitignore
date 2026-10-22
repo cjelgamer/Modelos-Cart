@@ -1,0 +1,24 @@
+# Entornos y kernels
+.venv/
+venv/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# Artefactos de compilacion LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+main.pdf
+
+# Archivos auxiliares de trabajo
+.dist/
+
+# Informe de una tarea previa, no forma parte de esta entrega
+Informe_Quinta_Tarea.pdf

@@ -1,0 +1,31 @@
+variable,random_forest,xgboost
+area error,0.0136,0.0125
+compactness error,0.0021,0.0045
+concave points error,0.0021,0.0033
+concavity error,0.0032,0.0455
+fractal dimension error,0.0049,0.0052
+mean area,0.0116,0.0275
+mean compactness,0.0025,0.0063
+mean concave points,0.1179,0.1065
+mean concavity,0.0197,0.0072
+mean fractal dimension,0.0016,0.005
+mean perimeter,0.0149,0.0
+mean radius,0.0074,0.0175
+mean smoothness,0.0048,0.0072
+mean symmetry,0.003,0.0031
+mean texture,0.0181,0.0121
+perimeter error,0.0046,0.0106
+radius error,0.0044,0.0102
+smoothness error,0.0036,0.0041
+symmetry error,0.0029,0.0036
+texture error,0.0063,0.0174
+worst area,0.1454,0.0279
+worst compactness,0.009,0.0233
+worst concave points,0.1838,0.1132
+worst concavity,0.0125,0.022
+worst fractal dimension,0.0042,0.0068
+worst perimeter,0.2169,0.2002
+worst radius,0.1392,0.2594
+worst smoothness,0.0088,0.0131
+worst symmetry,0.0076,0.0075
+worst texture,0.0234,0.0173

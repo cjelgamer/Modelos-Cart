@@ -1,0 +1,221 @@
+{
+  "ejercicio_1": {
+    "pregunta": "¿El árbol de decisión (gini/entropía) es más eficiente que la regresión logística?",
+    "conjunto": "breast_cancer (scikit-learn)",
+    "n_entrenamiento": 455,
+    "n_prueba": 114,
+    "malla_arbol": {
+      "max_depth": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        null
+      ],
+      "min_samples_leaf": [
+        1,
+        3,
+        5,
+        10
+      ],
+      "criterios": [
+        "gini",
+        "entropy"
+      ],
+      "n_configuraciones": 48
+    },
+    "malla_logistica": {
+      "C": [
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0,
+        1000.0
+      ],
+      "max_iter": 5000
+    },
+    "metricas_prueba": {
+      "regresion_logistica": {
+        "exactitud": 0.973684,
+        "precision": 0.972603,
+        "exhaustividad": 0.986111,
+        "f1": 0.97931,
+        "auc_roc": 0.995701,
+        "vn": 40,
+        "fp": 2,
+        "fn": 1,
+        "vp": 71,
+        "f1_entrenamiento": 0.989547,
+        "accuracy_entrenamiento": 0.986813
+      },
+      "arbol_gini": {
+        "exactitud": 0.938596,
+        "precision": 0.945205,
+        "exhaustividad": 0.958333,
+        "f1": 0.951724,
+        "auc_roc": 0.943948,
+        "vn": 38,
+        "fp": 4,
+        "fn": 3,
+        "vp": 69,
+        "f1_entrenamiento": 0.979239,
+        "accuracy_entrenamiento": 0.973626
+      },
+      "arbol_entropy": {
+        "exactitud": 0.877193,
+        "precision": 0.953125,
+        "exhaustividad": 0.847222,
+        "f1": 0.897059,
+        "auc_roc": 0.959325,
+        "vn": 39,
+        "fp": 3,
+        "fn": 11,
+        "vp": 61,
+        "f1_entrenamiento": 0.978799,
+        "accuracy_entrenamiento": 0.973626
+      },
+      "dummy": {
+        "exactitud": 0.631579,
+        "precision": 0.631579,
+        "exhaustividad": 1.0,
+        "f1": 0.774194,
+        "auc_roc": 0.5,
+        "vn": 0,
+        "fp": 42,
+        "fn": 0,
+        "vp": 72,
+        "f1_entrenamiento": 0.77027,
+        "accuracy_entrenamiento": 0.626374
+      }
+    },
+    "cv": [
+      {
+        "modelo": "regresion_logistica",
+        "f1_cv_media": 0.9861164154764722,
+        "f1_cv_de": 0.0042373687539358955,
+        "tiempo_busqueda_s": 0.005
+      },
+      {
+        "modelo": "arbol_gini",
+        "f1_cv_media": 0.9460067354804197,
+        "f1_cv_de": 0.012389237615964251,
+        "tiempo_busqueda_s": 0.004
+      },
+      {
+        "modelo": "arbol_entropy",
+        "f1_cv_media": 0.9508827216791819,
+        "f1_cv_de": 0.015357044271894714,
+        "tiempo_busqueda_s": 0.007
+      }
+    ],
+    "configuraciones": {
+      "regresion_logistica": "{'clasificador__C': 0.1}",
+      "arbol_gini": "{'max_depth': 3, 'min_samples_leaf': 5}",
+      "arbol_entropy": "{'max_depth': 4, 'min_samples_leaf': 5}"
+    },
+    "respuesta": {
+      "mejor_modelo": "regresion_logistica",
+      "f1_regresion_logistica": 0.9793103448275862,
+      "f1_arbol_gini": 0.9517241379310345,
+      "f1_arbol_entropy": 0.8970588235294118,
+      "diferencia_f1_logistica_entropia": 0.08225152129817437,
+      "diferencia_f1_logistica_gini": 0.027586206896551668
+    }
+  },
+  "ejercicio_2": {
+    "pregunta": "¿Qué configuración de árbol de regresión es la más eficiente frente a la regresión lineal?",
+    "conjunto": "auto_mpg (UCI Machine Learning Repository)",
+    "n_entrenamiento": 318,
+    "n_prueba": 80,
+    "malla_arbol": {
+      "criterion": [
+        "squared_error",
+        "absolute_error"
+      ],
+      "max_depth": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        null
+      ],
+      "min_samples_leaf": [
+        1,
+        3,
+        5,
+        10
+      ],
+      "max_features": [
+        null,
+        0.8
+      ],
+      "n_configuraciones": 112
+    },
+    "metricas_prueba": {
+      "regresion_lineal": {
+        "rmse": 2.887675,
+        "mae": 2.288247,
+        "r2": 0.844909,
+        "rmse_entrenamiento": 3.369679,
+        "mae_entrenamiento": 2.604628,
+        "r2_entrenamiento": 0.818893
+      },
+      "arbol_regresion": {
+        "rmse": 2.570032,
+        "mae": 1.885,
+        "r2": 0.877153,
+        "rmse_entrenamiento": 2.594767,
+        "mae_entrenamiento": 1.700629,
+        "r2_entrenamiento": 0.892612
+      },
+      "dummy_media": {
+        "rmse": 7.347333,
+        "mae": 5.955409,
+        "r2": -0.004033,
+        "rmse_entrenamiento": 7.918095,
+        "mae_entrenamiento": 6.68474,
+        "r2_entrenamiento": 0.0
+      }
+    },
+    "configuracion_seleccionada": {
+      "arbol__criterion": "absolute_error",
+      "arbol__max_depth": "6",
+      "arbol__max_features": "None",
+      "arbol__min_samples_leaf": "10"
+    },
+    "rmse_cv_arbol": 3.3393284747243293,
+    "repeticiones": [
+      {
+        "modelo": "arbol_regresion",
+        "rmse_media": 3.0976,
+        "rmse_de": 0.6492,
+        "rmse_min": 2.3807,
+        "rmse_max": 4.2307,
+        "r2_media": 0.8188,
+        "r2_de": 0.0941
+      },
+      {
+        "modelo": "regresion_lineal",
+        "rmse_media": 3.3506,
+        "rmse_de": 0.3734,
+        "rmse_min": 2.8877,
+        "rmse_max": 3.7327,
+        "r2_media": 0.7973,
+        "r2_de": 0.0462
+      }
+    ],
+    "respuesta": {
+      "mejor_modelo": "arbol_regresion",
+      "rmse_arbol": 2.5700316145915405,
+      "rmse_lineal": 2.8876751675610386,
+      "reduccion_rmse_mpg": 0.3176435529694981,
+      "reduccion_rmse_porcentaje": 10.999975223590791,
+      "r2_arbol": 0.8771526989824392,
+      "r2_lineal": 0.8449094399450834
+    }
+  }
+}
