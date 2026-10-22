@@ -97,7 +97,6 @@ Modelos-Cart/
 ├── README.md                 Este documento
 ├── requirements.txt          Versiones exactas del entorno
 ├── .gitignore                Excluye los temporales y el material académico
-├── Logo_UNAP.png             Logotipo institucional de la portada del informe
 ├── Tarea de ejecución 03.pdf Enunciado de la tarea
 ├── Archivo de texto.txt      Identificación del curso, el docente, el grupo y el autor
 ├── cuadernos/
