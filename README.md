@@ -6,7 +6,7 @@ Estudiante: Cristian Junior Cunurana Calderon · Escuela Profesional de Ingenier
 Modelos de árboles de decisión (CART), bagging, RandomForest y XGBoost aplicados a los conjuntos
 `breast_cancer` (clasificación) y `auto_mpg` (regresión).
 
-- **Informe final compilado:** [`Informe_Tarea_03.pdf`](Informe_Tarea_03.pdf) (35 páginas, 25 figuras, 15 tablas)
+- **Informe final compilado:** [`Informe_Tarea_03.pdf`](Informe_Tarea_03.pdf) (34 páginas, 25 figuras, 15 tablas)
 - **Código fuente del informe:** [`main.tex`](main.tex) (LaTeX, `latexmk -pdf main.tex`)
 - **Cuadernos ejecutados (sin errores):** `cuadernos/01_exploracion_datos.ipynb`, `cuadernos/02_arboles_y_modelos_lineales.ipynb`, `cuadernos/03_ensamblados.ipynb`
 
@@ -39,8 +39,7 @@ Portada · Índice general · **Resumen** · **1. Link del repositorio** (enlace
 y comandos de reproducción) · **2. Contexto y enfoque del trabajo** (caja resumen con el problema,
 el protocolo y los modelos comparados) · **3. Datos y preparación experimental** · **4.–8. Los cinco
 ejercicios** (uno por capítulo, con configuración, resultados y respuesta razonada) · **9. Discusión** ·
-**10. Conclusiones** · Bibliografía · **Anexo A. Tablas completas de validación cruzada** ·
-**Anexo B. Glosario**.
+**10. Conclusiones** · **Anexo A. Tablas completas de validación cruzada**.
 
 ## 3. Respuestas a las preguntas del enunciado
 
@@ -95,7 +94,7 @@ perímetro y puntos de concavidad.
 
 ```
 Modelos-Cart/
-├── Informe_Tarea_03.pdf      Informe final compilado (35 páginas)
+├── Informe_Tarea_03.pdf      Informe final compilado (34 páginas)
 ├── main.tex                  Código LaTeX del informe
 ├── README.md                 Este documento
 ├── requirements.txt          Versiones exactas del entorno
